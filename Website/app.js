@@ -102,10 +102,6 @@ app.post('/payments', function(req, res) {
 
     });
 
-
-
-    return res.redirect('/payment_success');
-
 });
 
 

@@ -31,11 +31,12 @@
             var regx7 = /^[1-9][0-9]{5}$/;
 
 
-            if (regx.test(Amount) && regx1.test(Name) && regx2.test(email) && regx3.test(mobile) && regx4.test(address) && regx5.test(address1) && regx6.test(city1) && regx7.test(zip1)) {
-                alert("Valid Details");
+            // if (regx.test(Amount) && regx1.test(Name) && regx2.test(email) && regx3.test(mobile) && regx4.test(address) && regx5.test(address1) && regx6.test(city1) && regx7.test(zip1)) {
+            if(!regx2.test(email) || !regx3.test(mobile)){
+                  alert("InValid Details");
 
             } else {
-                alert("Invalid Details");
+                alert("PAYMENT SUCCESSFUL");
 
             }
             if (regx.test(Amount) == false) {
@@ -325,13 +326,13 @@
                                 <label for="inputCity">City</label>
                                 <input type="text" class="form-control" id="inputCity">
                             </div>
-                            <div class="form-group col-md-4">
+                            <!-- <div class="form-group col-md-4">
                                 <label for="inputState">State</label>
                                 <select id="inputState" class="form-control" required="">
 				            <option selected >Choose...</option>
 				            <option>...</option>
 				          </select>
-                            </div>
+                            </div> -->
                             <div class="form-group col-md-2">
                                 <label for="inputZip">Zip</label>
                                 <input type="text" class="form-control" id="inputZip">
