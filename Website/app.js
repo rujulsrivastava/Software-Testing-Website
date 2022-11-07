@@ -8,7 +8,7 @@ var bodyParser = require("body-parser");
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI = 'mongodb+srv://netninja:test1234@nodetuts.2rvjc.mongodb.net/node-tuts?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://rujul123:rujul123@testcluster.5mgytsg.mongodb.net/?retryWrites=true&w=majority';
 
 
 //online connection
